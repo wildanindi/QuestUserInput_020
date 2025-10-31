@@ -116,6 +116,16 @@ fun FormDataDiri(modifier: Modifier){
             color = Color.DarkGray
         )
 
+        ElevatedCard (
+            elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.DarkGray),
+            modifier = Modifier
+                .height(height = 100.dp)
+                .width(width = 300.dp)
 
+        ){
+
+
+        }
     }
 }
