@@ -284,7 +284,39 @@ fun FormPendaftaran(modifier: Modifier) {
 
 
 
-
+        if(showDialog){
+            AlertDialog(
+                onDismissRequest = { showDialog = false},
+                title = { Text(text = "Data Pendaftaran Berhasil") },
+                text = {
+                    Column {
+                        Text(text = "Nama: $Nama")
+                        Text(text = "Asal Kota: $Kota")
+                        Text(text = "Tgl Lahir: $Tanggal")
+                        Text(text = "Alamat: RT $RT / RW $RW")
+                        Text(text = "Umur: $Umur")
+                        Text(text = "Jenis Kelamin: $JenisKelamin")
+                    }
+                },
+                confirmButton = {
+                    Button(
+                        onClick = {
+                            showDialog = false
+                            textNama = ""
+                            textKota = ""
+                            textTanggal = ""
+                            textRT = ""
+                            textRW = ""
+                            textUmur = ""
+                            textJK = ""
+                            validasi.value = false
+                        }
+                    ) {
+                        Text("OK")
+                    }
+                }
+            )
+        }
 
     }
     }
