@@ -112,6 +112,22 @@ fun FormPendaftaran(modifier: Modifier) {
                     }
                 )
 
+                // Spacer(modifier = Modifier.height(height = 10.dp))
+
+                OutlinedTextField(
+                    value = textKota,
+                    singleLine = true,
+                    shape = MaterialTheme.shapes.large,
+                    modifier = Modifier
+                        .padding(top = 30.dp, start = 50.dp, end = 50.dp)
+                        .fillMaxWidth(fraction = 1f)
+                        .height(height = 70.dp),
+                    label = { Text(text = "Asal Kota") },
+                    onValueChange = {
+                        textKota = it
+                    }
+                )
+
 
             }
 
