@@ -185,6 +185,23 @@ fun FormPendaftaran(modifier: Modifier) {
                     )
                 }
 
+                Spacer(modifier = Modifier.height(height = 10.dp))
+
+                OutlinedTextField(
+                    value = textUmur,
+                    singleLine = true,
+                    shape = MaterialTheme.shapes.large,
+                    modifier = Modifier
+                        .padding(top = 10.dp, start = 50.dp, end = 50.dp)
+                        .fillMaxWidth()
+                        .height(height = 70.dp),
+                    label = { Text(text = "Umur") },
+                    onValueChange = {
+                        textUmur = it
+                    }
+
+                )
+
 
                 }
 
