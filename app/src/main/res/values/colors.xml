@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="napi">#1A3D64</color>
+    <color name="api">#FCB53B</color>
+    <color name="ijolembut">#84994F</color>
+    <color name="putihab">#DEE8CE</color>
 </resources>
