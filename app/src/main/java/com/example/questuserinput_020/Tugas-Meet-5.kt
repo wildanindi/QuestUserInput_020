@@ -128,6 +128,27 @@ fun FormPendaftaran(modifier: Modifier) {
                     }
                 )
 
+                Spacer(modifier = Modifier.height(height = 20.dp))
+
+                Row() {
+                    OutlinedTextField(
+                        value = textTanggal,
+                        singleLine = true,
+
+                        shape = MaterialTheme.shapes.large,
+                        modifier = Modifier
+                            .padding(start = 50.dp)
+                            .width(width = 120.dp)
+                            .height(height = 70.dp),
+                        label = { Text(text = "Tgl Lahir") },
+                        onValueChange = {
+                            textTanggal = it
+                        }
+
+                    )
+
+
+                }
 
             }
 
