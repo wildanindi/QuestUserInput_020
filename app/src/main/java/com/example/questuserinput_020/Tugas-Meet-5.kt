@@ -256,10 +256,35 @@ fun FormPendaftaran(modifier: Modifier) {
                 }
                 Spacer(modifier = Modifier.height(height = 40.dp))
 
+                Button(
+                    modifier = Modifier
+                        .fillMaxWidth(1f)
+                        .padding(top = 10.dp, start = 100.dp, end = 100.dp)
+                        .height(height = 60.dp),
 
+
+                    enabled = validasi.value,
+                    onClick = {
+                        Nama = textNama
+                        Kota = textKota
+                        Tanggal = textTanggal
+                        RT = textRT
+                        RW = textRW
+                        Umur = textUmur
+                        JenisKelamin = textJK
+
+                        showDialog = true
+                    }
+
+                ) {
+                    Text(text = stringResource(id = R.string.submit))
                 }
-
+            }
         }
+
+
+
+
 
     }
     }
