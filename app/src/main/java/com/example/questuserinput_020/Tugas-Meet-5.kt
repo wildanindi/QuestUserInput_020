@@ -233,8 +233,20 @@ fun FormPendaftaran(modifier: Modifier) {
                     }
                 }
 
-            }
+                Row(
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Checkbox(
+                        modifier = Modifier.padding(start = 40.dp),
+                        checked = validasi.value,
+                        onCheckedChange = { newValue ->
+                            validasi.value = newValue
+                        }
 
+                    )
+
+                }
+            }
         }
 
     }
