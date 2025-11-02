@@ -64,7 +64,7 @@ fun FormPendaftaran(modifier: Modifier) {
         val gender: List<String> = listOf("Laki-laki", "Perempuan")
         val validasi = remember { mutableStateOf(false) }
 
-
+        var showDialog by remember { mutableStateOf(false) }
 
 
 
@@ -83,7 +83,38 @@ fun FormPendaftaran(modifier: Modifier) {
                 .padding(top = 70.dp, start = 80.dp),
         )
 
+        Card(
+            modifier = Modifier
+                .padding(top = 140.dp, start = 20.dp, end = 20.dp, bottom = 20.dp)
+                .fillMaxWidth(),
+            //.height(height = 650.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = colorResource(id = R.color.putihab).copy(alpha = 0.6f)
+            )
+        ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .verticalScroll(rememberScrollState())
+                    .padding(bottom = 20.dp)
+            ) {
+                OutlinedTextField(
+                    value = textNama,
+                    singleLine = true,
+                    shape = MaterialTheme.shapes.large,
+                    modifier = Modifier
+                        .padding(top = 30.dp, start = 50.dp, end = 50.dp)
+                        .fillMaxWidth(fraction = 1f)
+                        .height(height = 70.dp),
+                    label = { Text(text = "Nama Lengkap") },
+                    onValueChange = {
+                        textNama = it
+                    }
+                )
 
 
+            }
+
+        }
     }
-    }
+}
