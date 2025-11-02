@@ -166,7 +166,6 @@ fun FormPendaftaran(modifier: Modifier) {
                     )
 
 
-
                     //Spacer(modifier = Modifier.width(width = 5.dp))
 
                     OutlinedTextField(
@@ -202,8 +201,19 @@ fun FormPendaftaran(modifier: Modifier) {
 
                 )
 
+                Spacer(modifier = Modifier.height(height = 10.dp))
 
-                }
+                Text(
+                    text = stringResource(id = R.string.JK),
+                    color = Color.Black,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier
+                        .padding(top = 10.dp, start = 50.dp),
+
+                    )
+
+            }
 
         }
 
