@@ -166,6 +166,7 @@ fun FormPendaftaran(modifier: Modifier) {
                     )
 
 
+
                     //Spacer(modifier = Modifier.width(width = 5.dp))
 
                     OutlinedTextField(
@@ -244,9 +245,20 @@ fun FormPendaftaran(modifier: Modifier) {
                         }
 
                     )
+                    Text(
+                        modifier = Modifier.padding(end = 40.dp),
+                        text = "Saya setuju dengan syarat dan ketentuan yang berlaku",
+                        fontSize = 15.sp,
+                        color = Color.Black
+                    )
+
 
                 }
-            }
+                Spacer(modifier = Modifier.height(height = 40.dp))
+
+
+                }
+
         }
 
     }
