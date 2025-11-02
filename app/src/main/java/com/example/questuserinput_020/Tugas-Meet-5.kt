@@ -87,7 +87,7 @@ fun FormPendaftaran(modifier: Modifier) {
             modifier = Modifier
                 .padding(top = 140.dp, start = 20.dp, end = 20.dp, bottom = 20.dp)
                 .fillMaxWidth(),
-            //.height(height = 650.dp),
+                //.height(height = 650.dp),
             colors = CardDefaults.cardColors(
                 containerColor = colorResource(id = R.color.putihab).copy(alpha = 0.6f)
             )
@@ -148,10 +148,47 @@ fun FormPendaftaran(modifier: Modifier) {
                     )
 
 
+
+                    OutlinedTextField(
+                        value = textRW,
+                        singleLine = true,
+                        shape = MaterialTheme.shapes.large,
+                        modifier = Modifier
+                            .padding(start = 30.dp)
+                            .width(width = 70.dp)
+                            .height(height = 70.dp),
+                        label = { Text(text = "RW") },
+                        onValueChange = {
+                            textRW = it
+                        }
+
+
+                    )
+
+
+
+                    //Spacer(modifier = Modifier.width(width = 5.dp))
+
+                    OutlinedTextField(
+                        value = textRT,
+                        singleLine = true,
+                        shape = MaterialTheme.shapes.large,
+                        modifier = Modifier
+                            .padding(start = 5.dp)
+                            .width(width = 70.dp)
+                            .height(height = 70.dp),
+                        label = { Text(text = "RT") },
+                        onValueChange = {
+                            textRT = it
+                        }
+
+                    )
                 }
 
-            }
+
+                }
 
         }
+
     }
-}
+    }
