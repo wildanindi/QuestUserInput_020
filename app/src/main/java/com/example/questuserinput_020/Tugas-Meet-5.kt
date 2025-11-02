@@ -26,8 +26,17 @@ fun FormPendaftaran(modifier: Modifier) {
         var textUmur by remember { mutableStateOf(value = "") }
         var textJK by remember { mutableStateOf(value = "") }
 
+        var Nama by remember { mutableStateOf(value = "") }
+        var Kota by remember { mutableStateOf(value = "") }
+        var RT by remember { mutableStateOf(value = "") }
+        var RW by remember { mutableStateOf(value = "") }
+        var Tanggal by remember { mutableStateOf(value = "") }
+        var Umur by remember { mutableStateOf(value = "") }
+        var JenisKelamin by remember { mutableStateOf(value = "") }
 
-        }
+        val gender: List<String> = listOf("Laki-laki", "Perempuan")
+        val validasi = remember { mutableStateOf(false) }
+
 
     }
-
+    }
